@@ -28,12 +28,10 @@ You can list the unplayed games (by number of players and playing time) or simpl
     ```
 
 ## To contribute
-###clone the repo locally and install dependencies 
-    ```shell
+### clone the repo locally and install dependencies 
     git clone git@github.com:CrunchyArtie/pile-de-la-honte-cli.git
     cd pile-de-la-honte
     npm install
-    ```
 ### hot reload compilation and execution 
    ```shell
     npm run dev
@@ -64,5 +62,5 @@ make your changes and create a pull request ;-)
 - export the main intelligence to be used in other cases than a CLI app
 - add tests, more comments and continuous integration
 
-##License
+## License
 MIT © 2021 CrunchyArtie
