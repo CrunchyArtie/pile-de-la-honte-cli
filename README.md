@@ -29,11 +29,9 @@ You can list the unplayed games (by number of players and playing time) or simpl
 
 ## To contribute
 ### clone the repo locally and install dependencies 
-    ```shell
     git clone git@github.com:CrunchyArtie/pile-de-la-honte-cli.git
     cd pile-de-la-honte
     npm install
-    ```
 ### hot reload compilation and execution 
    ```shell
     npm run dev
