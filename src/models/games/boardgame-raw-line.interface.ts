@@ -1,0 +1,30 @@
+export interface BoardgameRawLineInterface {
+    '"ID"': string;
+    Titre: string;
+    Gamme: string;
+    Univers: string;
+    'Édition': string;
+    Type: string;
+    EAN: string;
+    'Prix indicatif': string;
+    'Joueur(s)': string;
+    'Durée': string;
+    'Age(s)': string;
+    Langues: string;
+    'Catégorie(s)': string;
+    'Thème(s)': string;
+    'Mécanisme(s)': string;
+    'Éditeur(s)': string;
+    'Auteur(s)': string;
+    'Illustrateur(s)': string;
+    'Date d\'acquisition': string;
+    'Propriétaire': string;
+    Cadeaux: string;
+    Emplacement: string;
+    'Prix d\'achat': string;
+    'État': string;
+    'Privé': string;
+    Commentaire: string;
+    'Référence': string;
+    'Référent': string;
+}
