@@ -49,6 +49,9 @@ You can list the unplayed games (by number of players and playing time) or simpl
 
 make your changes and create a pull request ;-)
 
+### Keep in mind
+Do not make request or anything else to directly call https://myludo.fr 
+
 ## TODO
 - Create a shared "Continue ?" question.
 - Add Header.
