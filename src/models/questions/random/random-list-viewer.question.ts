@@ -5,6 +5,7 @@ import Table from 'cli-table3';
 import {Observable} from 'rxjs';
 import {HomeQuestion} from '../home.question';
 import {Config, Options} from '../../config';
+import {ShortBoardgamesTable} from '../../tables/short-boardgames.table';
 
 export class RandomListViewerQuestion extends InputQuestionBase {
     protected before() {
@@ -18,23 +19,10 @@ export class RandomListViewerQuestion extends InputQuestionBase {
 
         const availableBoargames = notPlayedBoardgames.filter(b => b.time.includes(this.data.time) && b.playersAvailable.includes(this.data.players))
 
-        const table = new Table({
-            head: ['jeu', 'min', 'max', 'durée']
-        })
-
         const limit = Config.getInstance().get<number>(Options.count)
         const shuffled = availableBoargames.slice().sort(() => 0.5 - Math.random()).slice(0, limit);
 
-        table.push(...shuffled.map(boardgame => {
-            const cells: string[] = [
-                Math.min(...boardgame.playersAvailable).toString(),
-                Math.max(...boardgame.playersAvailable).toString(),
-                boardgame.rawTime
-            ]
-            return {[boardgame.title]: cells}
-        }))
-
-        console.log(table.toString())
+        console.log(new ShortBoardgamesTable(shuffled).toString())
     }
 
     constructor(private data: { players: number; time: number }) {
