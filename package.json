@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.1",
+    "@types/figlet": "^1.5.1",
     "@types/inquirer": "^7.3.1",
     "@types/lodash": "^4.14.168",
     "@types/nconf": "^0.10.0",
@@ -37,6 +38,7 @@
     "chalk": "^4.1.1",
     "cli-table3": "^0.6.0",
     "csv": "^5.5.0",
+    "figlet": "^1.5.0",
     "inquirer": "^8.0.0",
     "inquirer-file-tree-selection-prompt": "^1.0.7",
     "inquirer-prompt-suggest": "^0.1.0",

@@ -15,8 +15,19 @@ import {of} from 'rxjs';
 import {mergeMap, tap} from 'rxjs/operators';
 import {InitCsvGamesPathQuestion} from './models/questions/config/init-csv-games-path.question';
 import {GameRecordCollection} from './models/games/game-record.collection';
+import figlet from 'figlet';
+import terminalSize from 'term-size';
+import chalk from 'chalk';
 
 console.clear();
+const header = figlet.textSync('Pile de la honte', {
+    font: <any>['Roman', 'Chunky', 'Thin'].sort(() => 0.5 - Math.random())[0],
+    verticalLayout: 'default',
+    width: terminalSize().columns,
+});
+
+const styledHeader = chalk.hex('#5555ff').bold(header);
+console.log(styledHeader);
 
 inquirer.registerPrompt('search-list', require('inquirer-search-list'));
 inquirer.registerPrompt('file-tree-selection', require('inquirer-file-tree-selection-prompt'));
