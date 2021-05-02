@@ -54,7 +54,6 @@ Do not make request or anything else to directly call https://myludo.fr
 
 ## TODO
 - Create a shared "Continue ?" question.
-- Add Header.
 - Automatize 'back' response questions.
 - Filter boardgames from `BoardgameCollection` class.
 - Standardize information display.
